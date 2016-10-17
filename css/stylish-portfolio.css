@@ -200,6 +200,7 @@ hr.small {
 
 .portfolio-item {
     margin-bottom: 30px;
+    border: 3px solid #000000;
 }
 
 .img-portfolio {
@@ -209,6 +210,7 @@ hr.small {
 .img-portfolio:hover {
     opacity: 0.8;
 }
+
 
 /* Call to Action */
 
@@ -240,6 +242,12 @@ hr.small {
 
 footer {
     padding: 100px 0;
+    background-color: #337ab7;
+}
+
+
+.list-unstyled, .contact-details, .list-inline .fa{
+  color: white;
 }
 
 #to-top {
