@@ -484,6 +484,10 @@ body {
   box-shadow: 5px 5px 5px #888888;
 }
 
+ header .name-border{
+  transform: translate(-50%, -40%);
+}
+
 #home-heading{
   color: #000;
   background-color:gainsboro;
@@ -557,8 +561,12 @@ body {
 
 @media (min-width: 1600px){
   #headshot {
-    width: 250px;
+    width: 230px; 
   }
+
+  header .name-border{
+  transform: translate(-50%, -70%);
+}
 }
 
 @media (max-width: 1200px){
