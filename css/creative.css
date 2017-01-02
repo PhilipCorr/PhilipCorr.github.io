@@ -23,12 +23,12 @@ a {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
-  color: #FFF;
 }
-a:hover,
-a:focus {
-  color: #FFF;
+
+a:focus, a:hover {
+  text-decoration: none;
 }
+
 h1,
 h2,
 h3,
@@ -422,8 +422,8 @@ body {
   margin: 10% 10% 0 0;
 }
 
-.project-description-left{
-  margin: 10% 0 0 10%;
+.project-description-middle{
+  margin-top: 40px;
 }
 
 .phone-img{
@@ -475,6 +475,71 @@ body {
   background-color:gainsboro;
   font-family: courgette;
   font-weight: 200;
+}
+
+.logo-size{
+  font-size: 100px;
+}
+
+.devicons-html5 {
+    color: #E34C26;
+}
+
+.devicons-css3 {
+    color: #FFF;
+}
+
+.devicons-bootstrap {
+    color: #401F7C;
+}
+
+.devicons-jquery {
+    color: #0769AD;
+}
+
+.devicons-angular {
+    color: #e62a39;
+}
+
+.devicons-npm {
+    color: #cb3837;
+}
+
+.devicons-heroku {
+    color: #6567a5;
+}
+
+.devicons-css3 {
+    color: #0b73b8;
+}
+
+.devicons-grunt {
+    color: #7A5230
+}
+
+.devicons-java {
+    color: #0b73b8;
+}
+
+.skills-wrapper{
+    background-color: #eee;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    margin-top: 150px;
+    margin-bottom: -50px;
+    width: 80%;
+}
+
+.project-title{
+  margin-top: 20px;
+}
+
+.iOS-title{
+  padding-bottom: 20px;
+}
+
+#contact a {
+  color: #FFF;
 }
 
 @media (min-width: 1600px){
