@@ -29,6 +29,18 @@ a:focus, a:hover {
   text-decoration: none;
 }
 
+#skills span:hover {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+#skills img:hover {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+span
+
 h1,
 h2,
 h3,
@@ -57,7 +69,7 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 100px 0;
+  padding: 70px 0 100px 0;
 }
 aside {
   padding: 50px 0;
@@ -72,6 +84,7 @@ aside {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+  padding: 0% 2%;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #F05F40;
@@ -102,7 +115,7 @@ aside {
 }
 .navbar-default .nav > li.active > a,
 .navbar-default .nav > li.active > a:focus {
-  color: #F05F40 !important;
+  color: #337ab7 !important;
   background-color: transparent;
 }
 .navbar-default .nav > li.active > a:hover,
@@ -134,7 +147,7 @@ aside {
     border-color: rgba(34, 34, 34, 0.05);
   }
   .navbar-default.affix .navbar-header .navbar-brand {
-    color: #337ab7;
+    color: #222222;
     font-size: 14px;
   }
   .navbar-default.affix .navbar-header .navbar-brand:hover,
@@ -213,6 +226,7 @@ header .header-content .header-content-inner p {
 }
 .section-heading {
   margin-top: 0;
+  margin-bottom: 20px;
 }
 .service-box {
   max-width: 400px;
@@ -419,11 +433,11 @@ body {
 }
 
 .project-description-right{
-  margin: 10% 10% 0 0;
+  margin: 15% 10% 0 -40px;
 }
 
 .project-description-middle{
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 .phone-img{
@@ -458,7 +472,7 @@ body {
 #headshot {
   width: 200px;
   padding: .5em;
-  margin-top: 80px;
+  margin-top: 65px;
   border-radius: 50%;
   background: rgba(255, 255, 255, .4);
   box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
@@ -485,16 +499,16 @@ body {
     color: #E34C26;
 }
 
-.devicons-css3 {
-    color: #FFF;
-}
-
 .devicons-bootstrap {
     color: #401F7C;
 }
 
 .devicons-jquery {
     color: #0769AD;
+}
+
+.devicons-swift {
+    color: #E34C26;
 }
 
 .devicons-angular {
@@ -547,19 +561,40 @@ body {
   }
 }
 
+@media (max-width: 1200px){
+  .project-description-middle {
+    margin-left: 10%;
+    margin-right: 8%;
+  }
+  .project-description-right{
+    margin-right: 8;
+    margin-left: 10%;
+    margin-top: 5%;
+  }
+}
+
 @media (max-width: 768px){
   #headshot {
-    width: 150px;
-    margin-top:26px;
+    width: 125px;
+    margin-top:20px;
   }
+}
 
   @media (max-width: 500px){
   .name-border {
     width: 60%;
   }
+  .project-description-middle {
+    margin-left: 5%;
+  }
+  .project-description-right{
+    margin-left: 5%;
+  }
+}
 
   @media (max-width: 300px){
   .name-border {
     width: 80%;
   }
+
 }

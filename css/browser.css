@@ -275,6 +275,8 @@ body {
     margin-left:6%;
     color: #666;
     line-height: 2.2;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 /*********  Search  **********/ 
