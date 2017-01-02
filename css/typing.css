@@ -17,7 +17,7 @@ html,
 	left: 50%;
 	position: relative;
 	top: 50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 2%);
 }
 
 .container-fluid {
