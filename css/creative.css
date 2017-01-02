@@ -3,8 +3,8 @@
  * Copyright 2013-2016 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
  */
-html,
-body {
+ html,
+ body {
   height: 100%;
   width: 100%;
 }
@@ -192,7 +192,7 @@ header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
 header .header-content .header-content-inner p {
-  font-weight: 300;
+  font-weight: 600;
   color: #000;
   font-size: 16px;
   margin-bottom: 50px;
@@ -484,7 +484,7 @@ body {
   box-shadow: 5px 5px 5px #888888;
 }
 
- header .name-border{
+header .name-border{
   transform: translate(-50%, -40%);
 }
 
@@ -500,51 +500,51 @@ body {
 }
 
 .devicons-html5 {
-    color: #E34C26;
+  color: #E34C26;
 }
 
 .devicons-bootstrap {
-    color: #401F7C;
+  color: #401F7C;
 }
 
 .devicons-jquery {
-    color: #0769AD;
+  color: #0769AD;
 }
 
 .devicons-swift {
-    color: #E34C26;
+  color: #E34C26;
 }
 
 .devicons-angular {
-    color: #e62a39;
+  color: #e62a39;
 }
 
 .devicons-npm {
-    color: #cb3837;
+  color: #cb3837;
 }
 
 .devicons-heroku {
-    color: #6567a5;
+  color: #6567a5;
 }
 
 .devicons-css3 {
-    color: #0b73b8;
+  color: #0b73b8;
 }
 
 .devicons-grunt {
-    color: #7A5230
+  color: #7A5230
 }
 
 .devicons-java {
-    color: #0b73b8;
+  color: #0b73b8;
 }
 
 .skills-wrapper{
-    background-color: #eee;
-    border-radius: 10px;
-    padding-bottom: 30px;
-    margin-bottom: -50px;
-    width: 80%;
+  background-color: #eee;
+  border-radius: 10px;
+  padding-bottom: 30px;
+  margin-bottom: -50px;
+  width: 80%;
 }
 
 .project-title{
@@ -565,8 +565,8 @@ body {
   }
 
   header .name-border{
-  transform: translate(-50%, -70%);
-}
+    transform: translate(-50%, -70%);
+  }
 }
 
 @media (max-width: 1200px){
@@ -588,7 +588,7 @@ body {
   }
 }
 
-  @media (max-width: 500px){
+@media (max-width: 500px){
   .name-border {
     width: 60%;
   }
@@ -600,7 +600,7 @@ body {
   }
 }
 
-  @media (max-width: 300px){
+@media (max-width: 300px){
   .name-border {
     width: 80%;
   }

@@ -1,9 +1,9 @@
 
 @font-face {
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 100;
-    src: local("Roboto Thin"), local("Roboto-Thin"), url("http://themes.googleusercontent.com/static/fonts/roboto/v9/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff") format("woff");
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Roboto Thin"), local("Roboto-Thin"), url("http://themes.googleusercontent.com/static/fonts/roboto/v9/vzIUHo9z-oJ4WgkpPOtg13YhjbSpvc47ee6xR_80Hnw.woff") format("woff");
 }
 
 
@@ -314,12 +314,12 @@ h2 {
   width:4px;
   
 /*  -moz-box-shadow:    inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;*/
-  box-shadow:          2px 3px 2px 0px #787878, 0px 0px 0px 4px #2f2f2f;
+-webkit-box-shadow: inset 0 0 10px #000000;*/
+box-shadow:          2px 3px 2px 0px #787878, 0px 0px 0px 4px #2f2f2f;
 
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
-  border-radius: 10px;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+border-radius: 10px;
 }
 
 .iphone .speaker:after {
@@ -346,13 +346,13 @@ h2 {
   background:#edf0f4;
   box-shadow: inset 0px -187px 0px -160px #f3f5f9;
 /*  background: -webkit-linear-gradient(top, #edf0f4 50%, #f3f5f9 50%);
-  background: -moz-linear-gradient(top, #edf0f4 50%, #f3f5f9 50%);*/
-  
-  border:1px solid #e8eaee;
+background: -moz-linear-gradient(top, #edf0f4 50%, #f3f5f9 50%);*/
 
-  -moz-border-radius: 60px;
-  -webkit-border-radius: 60px;
-  border-radius: 60px;
+border:1px solid #e8eaee;
+
+-moz-border-radius: 60px;
+-webkit-border-radius: 60px;
+border-radius: 60px;
 }
 
 .iphone > .home:after {
@@ -703,7 +703,7 @@ Home Screen
 /* Home Screen: Icons: Photos */
 
 .iphone .screen .icon.photos {}
-  
+
 .iphone .screen .icon.photos span {
   display:block;
   position:absolute;
@@ -1158,7 +1158,7 @@ Home Screen
   background: linear-gradient(to bottom,  #4fe6bf 25%,#5ac8fb 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fe6bf', endColorstr='#5ac8fb',GradientType=0 ); /* IE6-9 */
 }
-  
+
 .iphone .screen .icon.videos .arm {
   width:100%;
   height:14px;
@@ -1240,7 +1240,7 @@ Home Screen
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#03000000',GradientType=0 ); /* IE6-9 */
   }
 }
-  
+
 
 /* Home Screen: Icons: Notes */
 
@@ -1810,7 +1810,7 @@ Home Screen
   top:0px;
   left:23px;
 }
-  
+
 .iphone .screen .icon.voicememos .soundwave hr {
   background:#000;
   height:0.5px;
@@ -2006,13 +2006,13 @@ Home Screen
 /* Home Screen: Icons: Passbook */
 
 .iphone .screen .icon.passbook {}
-  
+
 .iphone .screen .icon.passbook div {
   width:100%;
   height:15px;
   position:relative;
 }
-  
+
 .iphone .screen .icon.passbook .flights {
   background:#55b6ed;
   
@@ -2664,7 +2664,7 @@ Home Screen
 /* Home Screen: Icons: Safari */
 
 .iphone .screen .icon.safari {}
-  
+
 .iphone .screen .icon.safari .compass {
   background: rgb(26,213,253);
   background: -moz-linear-gradient(top,  rgba(26,213,253,1) 0%, rgba(29,100,240,1) 100%);

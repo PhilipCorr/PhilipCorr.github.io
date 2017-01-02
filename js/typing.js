@@ -110,7 +110,7 @@
                 for (var i=0;i<self.strings.length;++i) self.sequence[i]=i;
 
                 // shuffle the array if true
-                if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
+            if(self.shuffle) self.sequence = self.shuffleArray(self.sequence);
 
                 // Start typing
                 self.typewrite(self.strings[self.sequence[self.arrayPos]], self.strPos);
@@ -249,10 +249,10 @@
                 // humanized value for typing
             }, humanize);
 
-        }
+}
 
-        ,
-        backspace: function(curString, curStrPos) {
+,
+backspace: function(curString, curStrPos) {
             // exit when stopped
             if (this.stop === true) {
                 return;
@@ -327,7 +327,7 @@
 
                         self.init();
                     } else
-                        self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
+                    self.typewrite(self.strings[self.sequence[self.arrayPos]], curStrPos);
                 }
 
                 // humanized value for typing
@@ -339,7 +339,7 @@
          * @param {Array} array
          * @returns {Array}
          */
-        ,shuffleArray: function(array) {
+         ,shuffleArray: function(array) {
             var tmp, current, top = array.length;
             if(top) while(--top) {
                 current = Math.floor(Math.random() * (top + 1));
@@ -388,8 +388,8 @@
     $.fn.typed = function(option) {
         return this.each(function() {
             var $this = $(this),
-                data = $this.data('typed'),
-                options = typeof option == 'object' && option;
+            data = $this.data('typed'),
+            options = typeof option == 'object' && option;
             if (!data) $this.data('typed', (data = new Typed(this, options)));
             if (typeof option == 'string') data[option]();
         });
@@ -442,24 +442,24 @@ $("document").ready(function() {
 
 function handleShowHideSidebar() {
   var $menuButton = $("#menu-button i"),
-      show = "animated slideInLeft",
-      hide = "animated slideOutLeft";
+  show = "animated slideInLeft",
+  hide = "animated slideOutLeft";
 
   $menuButton.on("click", function() {
     var $sideBar = $("#sidebar");
 
     if ($sideBar.hasClass("slideInLeft")) {
       $sideBar
-        .removeClass(show)
-        .addClass(hide)
-        .removeClass("hidden");
-    } else {
+      .removeClass(show)
+      .addClass(hide)
+      .removeClass("hidden");
+  } else {
       $sideBar
-        .removeClass(hide)
-        .addClass(show)
-        .removeClass("hidden");
-    }
-  });
+      .removeClass(hide)
+      .addClass(show)
+      .removeClass("hidden");
+  }
+});
 }
 
 function handleSideBarClick() {
@@ -467,12 +467,12 @@ function handleSideBarClick() {
     var href = $(this).attr("href");
     $("html, body").animate({
       scrollTop: $(href).offset().top
-    }, 600);
+  }, 600);
     $("#sidebar")
-      .removeClass("animated slideInLeft")
-      .addClass("animated slideOutLeft");
+    .removeClass("animated slideInLeft")
+    .addClass("animated slideOutLeft");
     return false;
-  });
+});
 }
 
 function handleEscKey() {
@@ -481,25 +481,25 @@ function handleEscKey() {
       var href = $(this).attr("href");
       $("html, body").animate({
         scrollTop: $(href).offset().top
-      }, 600);
+    }, 600);
       $("#sidebar")
-        .removeClass("animated slideInLeft")
-        .addClass("animated slideOutLeft");
+      .removeClass("animated slideInLeft")
+      .addClass("animated slideOutLeft");
       return false;
-    }
-  });
+  }
+});
 }
 
 function handleTyping () {
   $(".element").typed({
     strings: ["creating responsive software", 
-              "designing user interfaces", 
-              "working as part of a team"],
+    "designing user interfaces", 
+    "working as part of a team"],
     typeSpeed: 50,
     starDelay: 200,
     backDelay: 600,
     loop: true,
     showCursor: true,
     cursorChar: "|"
-  });
+});
 }
