@@ -555,6 +555,10 @@ header .name-border{
   padding-bottom: 20px;
 }
 
+#CNN .tf-browser{
+  margin-top: 90px;
+}
+
 #contact a {
   color: #FFF;
 }
