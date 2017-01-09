@@ -470,7 +470,7 @@ body {
 }
 
 #headshot {
-  width: 200px;
+  width: 150px;
   padding: .5em;
   margin-top: 65px;
   border-radius: 50%;
@@ -582,13 +582,6 @@ header .name-border{
     margin-right: 8;
     margin-left: 10%;
     margin-top: 5%;
-  }
-}
-
-@media (max-width: 900px){
-  #headshot {
-    width: 150px;
-    margin-top:20px;
   }
 }
 
