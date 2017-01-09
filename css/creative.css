@@ -585,6 +585,13 @@ header .name-border{
   }
 }
 
+@media (max-width: 900px){
+  #headshot {
+    width: 150px;
+    margin-top:20px;
+  }
+}
+
 @media (max-width: 768px){
   #headshot {
     width: 125px;
