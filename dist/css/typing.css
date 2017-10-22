@@ -1,0 +1,78 @@
+html,
+
+.light-white-font {
+	color: #fdfdff;
+}
+
+.typing{
+	margin-bottom: 100px;
+	margin-top: 16px;
+}
+
+.middle-blue-font {
+	color: #00f6ed !important;
+}
+
+.center {
+	left: 50%;
+	position: relative;
+	top: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.container-fluid {
+	min-height: 100%;
+	padding: 0;
+}
+
+.fill {
+	height: 100%;
+	min-height: 100%;
+}
+
+.fixed-width {
+	max-width: 300px;
+	min-width: 300px;
+}
+
+@keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes blink {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
