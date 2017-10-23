@@ -3,111 +3,10 @@ import MainMenu from './MainMenu'
 const Home = () =>
 <div className="home">
 
-  <section id="skills">
-    <div className="container">
-        <div className="row">
-            <div className="col-lg-12 text-center">
-                <h2 className="section-heading">Skills</h2>
-            </div>
-        </div>
-    </div>
-    <div className="skills-wrapper center">
-        <div className="row">
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#roasted-pepper">
-                        <span className="devicons devicons-angular logo-size"></span>
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#farm-house">
-                        <span className="devicons devicons-jquery logo-size"></span>
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#farm-house">
-                        <span className="devicons devicons-html5 logo-size"></span>
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#farm-house">
-                        <span className="devicons devicons-css3 logo-size"></span>
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#farm-house">
-                        <span className="devicons devicons-bootstrap logo-size"></span>
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#roasted-pepper">
-                        <span className="devicons devicons-heroku logo-size"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div className="row">
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#iOS">
-                        <span className="devicons devicons-swift logo-size"></span>                    
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#CNN">
-                        <img src="img/logos/tf.png"></img>
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#hybris">
-                        <span className="devicons devicons-java logo-size"></span> 
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#CNN">
-                        <span className="devicons devicons-python logo-size"></span> 
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#roasted-pepper-responsive">
-                        <span className="devicons devicons-grunt logo-size"></span>
-                    </a>
-                </div>
-            </div>
-            <div className="col-lg-2 col-md-4 col-sm-4 col-xs-6 text-center">
-                <div className="service-box">
-                    <a className="page-scroll" href="#roasted-pepper-responsive">
-                        <span className="devicons devicons-npm logo-size"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-<section  id="portfolio">
+<section  id="blog">
     <div className="row">
         <div className="col-lg-12 text-center">
-            <h2 className="section-heading">Projects</h2>
+            <h2 className="section-heading">Blog</h2>
         </div>
     </div>
     <div className="container-fluid">
@@ -117,58 +16,17 @@ const Home = () =>
                     <h3 className="section-heading iOS-title">Neural Networks for iOS</h3>
                 </div>
             </div>
-            <div className="col-lg-4">
-                <div className="iphone-border">
-                    <span className="top left">
-                        <span className="ringer"></span>
-                        <span className="volume up"></span>
-                        <span className="volume down"></span>
-                    </span>
-                    <span className="top right">
-                        <span className="power"></span>
-                    </span>
-                    <span className="bottom left"></span>
-                    <span className="bottom right"></span>
-
-                    <div className="iphone">    
-                        <span className="speaker"></span>
-                        <div className="screen">
-                            <img className="phone-img" src="img/fyp-entry.png" alt="" />
-                        </div>
-                        <a href="#" className="home"></a>
-                    </div>
+                <div className="col-lg-4">
+                    First Post
                 </div>
-            </div>
-            <div className="col-lg-4">
-                <div className="project-description-middle">
-                    <p>Final Year project on convolutional neural networks for iOS gesture recognition. Initial training was done using the MNIST dataset. Currently recording my own dataset of iOS gestures which will allow training of more accurate networks for iOS. This improved accuracy comes from extra paramaters such as the time, speed, acceleration and force with which the numbers are drawn. This extra information allows the networks to predict, more accuratly than is possible with standard bitmap images, what the number is. This dataset will be open sourced after completion to allow for further work in this area.</p>
-
-                    <p>The app for recording this data was created in Xcode using Swift. Initally it asks for the users age, sex, nationality and handedness. This is to ensure that the dataset is diverse. The database was built using Apple's CoreData framework. It consists of four levels. The first level represents the user. Each user has 80 digits associated with them. These 80 digits are comprised of 8 sets, each set containing the numbers 0 to 9. Four of these sets are drawn using the index finger and the other four are drawn using the thumb. These 80 digits make up the second level. Each of these digits are comprised of a variable number of strokes. E.g. the number 7 can be drawn in 1 or 2 strokes. These strokes are the third level. Each of these strokes are further made up of a number of x,y co-ordinates. This is the finest level of granularity.</p> 
+                <div className="col-lg-6">
+                    Second Post
                 </div>
-            </div>
-            <div className="col-lg-4">
-                <div className="iphone-border">
-                    <span className="top left">
-                        <span className="ringer"></span>
-                        <span className="volume up"></span>
-                        <span className="volume down"></span>
-                    </span>
-                    <span className="top right">
-                        <span className="power"></span>
-                    </span>
-                    <span className="bottom left"></span>
-                    <span className="bottom right"></span>
-
-                    <div className="iphone">    
-                        <span className="speaker"></span>
-                        <div className="screen">
-                            <img className="phone-img" src="img/fyp-summary.png" alt="" />
-                        </div>
-                        <a href="#" className="home"></a>
-                    </div>
+                <div className="col-lg-2">
+                    Read More
                 </div>
-            </div>
         </div>
+    </div>
         <div className="row" id="CNN">
             <div className="row">
                 <div className="col-lg-12 text-center project-title">
@@ -396,7 +254,6 @@ const Home = () =>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
 </div>
