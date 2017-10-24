@@ -12,32 +12,35 @@ const Home = () =>
             </div>
         </div>
         <div className="container-fluid">
-                <div className="row">
+                <div className="row blog-snippet">
                     <div className="col-lg-4 blog-picture">
-                        <img src="img/tensor-board.png" className="img-responsive" alt=""/>
+                        <img src="img/logos/python-xl.png" className="img-responsive" alt=""/>
                     </div>
                     <div className="col-lg-8 blog-text">
-                        <h3 className="blog-title">An Introduction to Convolutional Neural Networks</h3>
-                            <Link className="read-more" to="/CNN">Read More</Link>
+                        <h3 className="blog-title">Python interview Questions</h3>
+                            <p className="blog-p">List of python questions I put together while preparing for interviews.
+                            My main language is python so I decided to focus on that.</p>
                     </div>
+                    <Link to="/Python-Interview-Questions" className="read-more">Read More</Link>
                 </div>
-                <div className="row">
+                <div className="row blog-snippet">
                     <div className="col-lg-4 blog-picture">
                         <img src="img/qlik.png" className="img-responsive" alt=""/>
                     </div>
                     <div className="col-lg-8 blog-text">
                         <h3 className="blog-title">An Introduction to Convolutional Neural Networks</h3>
-                            <Link className="read-more" to="/CNN">Read More</Link>
                     </div>
+                    <Link className="read-more" to="/CNN">Read More</Link>
                 </div>
-                <div className="row">
+                <div className="row blog-snippet blog-final-snippet">
                     <div className="col-lg-4 blog-picture">
                         <img src="img/hybris.png" className="img-responsive" alt=""/>
                     </div>
                     <div className="col-lg-8 blog-text">
                         <h3 className="blog-title">An Introduction to Convolutional Neural Networks</h3>
-                            <Link className="read-more" to="/CNN">Read More</Link>
                     </div>
+                    <Link className="read-more" to="/CNN">Read More</Link>
+
                 </div>
         </div>
     </div>
