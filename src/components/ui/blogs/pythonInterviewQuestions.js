@@ -49,23 +49,16 @@ const Home = () =>
                 xrange is a sequence object that evaluates lazily.
             </p>
 
-            <pre className="language-python">
-            def median(pool):
-                '''Statistical median to demonstrate doctest.
-                >>> median([2, 9, 9, 7, 9, 2, 4, 5, 8])
-                7
-                '''
-                copy = sorted(pool)
-                size = len(copy)
-                if size % 2 == 1:
-                    return copy[(size - 1) / 2]
-                else:
-                    return (copy[size/2 - 1] + copy[size/2]) / 2
+            <pre className="prettyprint" className="custom-code">{`
+                class Voila {
+                public:
+                  // Voila
+                  static const string VOILA = "Voila";
 
-            if __name__ == '__main__':
-                import doctest
-                doctest.testmod()
-            </pre>
+                  // will not interfere with embedded <a href="#voila2">tags</a>.
+                }
+
+            `}</pre>
 
         </div>
     </div>
