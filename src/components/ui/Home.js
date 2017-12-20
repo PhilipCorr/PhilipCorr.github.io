@@ -12,6 +12,19 @@ const Home = () =>
             </div>
         </div>
         <div className="container-fluid">
+            <Link to="/Spark-Installation">
+                <div className="row blog-snippet">
+                    <div className="col-lg-4 blog-picture">
+                        <img src="img/logos/spark.png" className="img-responsive" alt=""/>
+                    </div>
+                    <div className="col-lg-8 blog-text">
+                        <h3 className="blog-title">How to install spark on windows</h3>
+                            <p className="blog-p"></p>
+                    </div>
+                </div>
+            </Link>
+
+                {/*
                 <div className="row blog-snippet">
                     <div className="col-lg-4 blog-picture">
                         <img src="img/logos/python-xl.png" className="img-responsive" alt=""/>
@@ -23,25 +36,7 @@ const Home = () =>
                     </div>
                     <Link to="/Python-Interview-Questions" className="read-more">Read More</Link>
                 </div>
-                <div className="row blog-snippet">
-                    <div className="col-lg-4 blog-picture">
-                        <img src="img/qlik.png" className="img-responsive" alt=""/>
-                    </div>
-                    <div className="col-lg-8 blog-text">
-                        <h3 className="blog-title">An Introduction to Convolutional Neural Networks</h3>
-                    </div>
-                    <Link className="read-more" to="/CNN">Read More</Link>
-                </div>
-                <div className="row blog-snippet blog-final-snippet">
-                    <div className="col-lg-4 blog-picture">
-                        <img src="img/hybris.png" className="img-responsive" alt=""/>
-                    </div>
-                    <div className="col-lg-8 blog-text">
-                        <h3 className="blog-title">An Introduction to Convolutional Neural Networks</h3>
-                    </div>
-                    <Link className="read-more" to="/CNN">Read More</Link>
-
-                </div>
+                */}
         </div>
     </div>
 </section>
