@@ -8,7 +8,7 @@ const Home = () =>
     <div className="blog-body">
         <div className="row">
             <div className="col-lg-12 text-center">
-                <h2 className="section-heading blog-heading">Blog</h2>
+                <h2 className="section-heading blog-heading"></h2>
             </div>
         </div>
         <div className="container-fluid">
@@ -23,7 +23,6 @@ const Home = () =>
                     </div>
                 </div>
             </Link>
-
                 {/*
                 <div className="row blog-snippet">
                     <div className="col-lg-4 blog-picture">

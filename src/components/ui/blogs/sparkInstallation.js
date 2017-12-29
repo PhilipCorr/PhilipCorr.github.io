@@ -7,95 +7,164 @@ const Home = () =>
     <div className="blog-body">
         <div className="row">
             <div className="col-lg-12 text-center">
-                <h2 className="section-heading blog-heading">Spark Installation</h2>
+                <h2 className="blog-heading">Spark Installation On Windows</h2>
+                <h4 className="blog-heading date">20/12/2017</h4>
             </div>
         </div>
         <div className="container-fluid">
-            <p className="question">
-                Steps to install Apache Spark in local mode:
-            </p>
-            <p className="answer">
-                1) Install Java 7 or later. To test java installation is complete, open command prompt type java and hit enter. 
-                If you receive a message 'Java' is not recognized as an internal or external command. 
-                You need to configure your environment variables, JAVA_HOME and PATH to point to the path of jdk.
-            </p>
-            <p className="answer">
-            2) Download and install Scala.
-                just double click installer (msi file) and go through the process.
-                Scala automatically added to PATH.
-                check here for location of install.
-                For me was C:\Program Files (x86)\scala\bin
-            </p>
-            <p className="answer">
-            3) Set SCALA_HOME in Control Panel\System and Security\System goto "Adv System settings" and add %SCALA_HOME%\bin in PATH variable in environment variables.
-            </p>
-            <p className="answer">
-            4) Install Python 2.6 or later from Python Download link.
-                My console output:
-                (C:\Users\Phil\Anaconda3) C:\Spark\spark\bin>python -V
-                Python 3.6.1 :: Anaconda 4.4.0 (64-bit)
-            </p>
-            <p className="answer">
-            5) 
-            Download SBT. Install it and set SBT_HOME as an environment variable with value as SBT PATH.
-            </p>
-            <p className="answer">
-            6)
-            Download winutils.exe from HortonWorks repo or git repo. 
-            Since we don't have a local Hadoop installation on Windows we have to download winutils.exe and place it in a bin directory under a created Hadoop home directory. 
-            Set HADOOP_HOME = Hadoop home directory in environment variable.
-            We will be using a pre-built Spark package, so choose a Spark pre-built package for Hadoop Spark download. Download and extract it.
-            </p>
-            <p className="answer">
-            7)
-            Set SPARK_HOME and add %SPARK_HOME%\bin in PATH variable in environment variables.
+            <p className="step">
+                Necessary Components:
+                <ul>
+                    <li>Anaconda with python installed</li>
+                    <li>Java</li>
+                    <li>Scala</li>
+                    <li>SBT (Scala Build Tool)</li>
+                    <li>Hadoop</li>
+                    <li>Spark</li>
+                </ul>
 
-            Insert Error here...
-
-            Fix: Permissions issue. See this line specifically:
-            Caused by: java.lang.RuntimeException: The root scratch dir: /tmp/hive on HDFS should be writable. Current permissions are: rw-rw-rw-
-
-            This will show the permissions on the c:/tmp/hive file in question:
-            c:\work\hadoop-2.2\bin\winutils.exe ls c:/tmp/hive
-
-            This will change the permissions as required:
-            D:\winutils\bin\winutils.exe chmod 777 D:\tmp\hive
             </p>
-            <p className="answer">
-            8)
-            setx SPARK_HOME C:\opt\spark\spark-2.1.0-bin-hadoop2.7
-            will allow spark to be run from anywhere
+            <ol>
+                <li className="step">
+                    <p> Install <a href="https://conda.io/docs/user-guide/install/index.html">Anaconda</a> 
+                        and create an environment with Python 3.6 or later (3.6 was latest at time of writing).
+                    </p>
+                    <p> After correct installation python -V should show the following output:
+                        (C:\Users\Phil\Anaconda3) C:\Spark\spark\bin>python -V
+                        Python 3.6.1 :: Anaconda 4.4.0 (64-bit)</p>
+                </li>
+                <li className="step">
+                    <p>
+                        Check Which version of java you have by typing "java -version" into Command prompt.
+                    </p>
+                    <p>
+                        We need Java because Spark runs on the JVM.
+                        You may need to change the version of Java running on your computer. 
+                        Java 9 had issues at the time of writing.
+                        I switched back to Java 8 and I was good to go. Download Java 8 from 
+                    <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html"> here</a>. 
+                    </p>
+                    <p>
+                        If you receive a message: 'Java' is not recognized as an internal or external command. 
+                        You need to configure your environment variables, JAVA_HOME and PATH to point to the path of jdk.
+                    </p>
+                    <p>
+                        Path: C:\Program Files\Java\jdk1.8.0_151\bin
+                    </p>
+                    <p>
+                        JAVA_HOME: C:\Program Files\Java\jdk1.8.0_151
+                    </p>
+                </li>
+                <li className="step">
+                    <p>
+                        Download the Scala binaries for windows 
+                        from the <a href="https://www.scala-lang.org/download/">Scala website</a>. 
+                        After downloading, double click the installer (msi file) and go through each of the steps.
+                        Scala should be automatically added to your PATH environment variables.
+                        check your path environment variables for the location.
+                    </p>
+                    <p>
+                        For me it installed to: 
+                        C:\Program Files (x86)\scala\bin
+                    </p>
+                </li>
+                <li className="step">
+                    <p>
+                    Similarly to the previous step, download SBT, Scala Build Tool, for windows 
+                    from the <a href="http://www.scala-sbt.org/download.html">Scala-sbt website</a>. 
+                    After downloading, double click the installer (msi file) and go through each of the steps.
+                    SBT should be automatically added to your PATH environment variables.
+                    check your path environment variables for the location.
+                     
+                    </p>
+                    <p>
+                    For me it installed to:
+                    C:\Program Files (x86)\sbt\bin
+                    </p>
+                </li>
+                <li className="step">
+                    Download winutils.exe from HortonWorks repo or git repo.
+
+                    This curl command should allow you to download from command prompt:
+
+                    curl -k -L -o winutils.exe https://github.com/steveloughran/winutils/blob/master/hadoop-2.6.0/bin/winutils.exe?raw=true
+
+                    This is required as we don't have a local Hadoop installation on Windows.
+                    Place it in a bin directory inside an empty created Hadoop home directory. 
+                    Set HADOOP_HOME to the Hadoop home directory in environment variables.
+                    HADOOP_HOME: C:\Spark\Hadoop
+
+                </li>
+                <li className="step">
+                    Download Spark from: 
+                    https://spark.apache.org/downloads.html
+                    
+                    Extract into a spark directory inside the Spark parent directory.
+
+                    Set the SPARK_HOME variable. This will allow spark to be run from anywhere. 
+                    For me it was C:\Spark\spark
+
+                    Append %SPARK_HOME%\bin to the PATH variable in environment variables.
+
+                    Java may throw an error here similar to:
+                    The root scratch dir: /tmp/hive on HDFS should be writable. Current permissions are: ---------
+
+                    Fix: This will show the permissions on the c:/tmp/hive file in question:
+                    c:\work\hadoop-2.2\bin\winutils.exe ls c:/tmp/hive
+
+                    This will change the permissions as required:
+                    D:\winutils\bin\winutils.exe chmod 777 D:\tmp\hive
+
+                </li>
+                <li className="step">
+                
+                    Run command: spark-shell
+                </li>
+                <li className="step">
+                    
+                    Open http://localhost:4040/ in a browser to see the SparkContext web UI.
+                </li>
+            </ol>
+
+            <p className="section-heading">
+                For Standalone Applications:
             </p>
-            <p className="answer">
-            8)
-            Run command: spark-shell
+            <ol>
+                <li className="step">
+                <p>
+                    pip install pyspark
+                </p>
+                <p>
+                    This Python packaged version of Spark is suitable for 
+                    interacting with an existing cluster (be it Spark standalone, YARN, or Mesos).
+                    It does not contain the tools required to setup your own standalone Spark cluster.
+                    Using PySpark requires the Spark JARs.
+                </p>
+                </li>
+            </ol>
+            <p className="section-heading">
+                To Run In Pycharm:
             </p>
-            <p className="answer">
-            8)
-            Open http://localhost:4040/ in a browser to see the SparkContext web UI.
-            </p>
-            <p className="answer">
-            For standalone applications:
-            1) pip install pyspark - what exactly is this for? (Not all of pyspark?)
-
-            For Pycharm:
-            1) Run > Edit Configurations > Environment Variables: PYSPARK_PYTHON C:\Users\Phil\Anaconda3\python.exe
-
-            2) File > Settings > Project > Project Interpreter > gear icon > More > Show paths for selected interpreter > add C:\Spark\spark\python\lib\py4j-0.10.4-src.zip
-            </p>
-
-
-            <pre className="prettyprint" className="custom-code">{`
-                class Voila {
-                public:
-                  // Voila
-                  static const string VOILA = "Voila";
-
-                  // will not interfere with embedded <a href="#voila2">tags</a>.
-                }
-
-            `}</pre>
-
+            <ol>
+                <li className="step">
+                    <p>These steps come from here:</p>
+                    <p>https://stackoverflow.com/questions/34685905/how-to-link-pycharm-with-pyspark/36415945</p>
+                    <p>
+                    For running spark from pycharm and environment variable must be added from within pycharm:
+                    </p>
+                    <p>
+                    Run > Edit Configurations > Environment Variables: PYSPARK_PYTHON C:\Users\Phil\Anaconda3\python.exe
+                    </p>
+                </li>
+                <li className="step">
+                    <p>
+                        You also need to add a path to the python interpreter:
+                    </p>
+                    <p>
+                        File > Settings > Project > Project Interpreter > gear icon > More > Show paths for selected interpreter > add C:\Spark\spark\python\lib\py4j-0.10.4-src.zip
+                    </p>
+                </li>
+            </ol>
         </div>
     </div>
 </section>
