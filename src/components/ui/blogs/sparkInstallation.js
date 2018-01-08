@@ -4,13 +4,15 @@ const Home = () =>
 <div className="home">
 
 <section  id="blog">
-    <div className="blog-body">
+    <div className="blog-header">
         <div className="row">
             <div className="col-lg-12 text-center">
                 <h2 className="blog-heading">Spark Installation On Windows</h2>
                 <h4 className="blog-heading date">20/12/2017</h4>
             </div>
         </div>
+    </div>
+    <div className="blog-body">
         <div className="container-fluid">
             <p className="step">
                 Necessary Components:
@@ -26,7 +28,7 @@ const Home = () =>
             </p>
             <ol>
                 <li className="step">
-                    <p> Install <a href="https://conda.io/docs/user-guide/install/index.html">Anaconda</a> 
+                    <p> Install <a href="https://conda.io/docs/user-guide/install/index.html"> Anaconda </a> 
                         and create an environment with Python 3.6 or later (3.6 was latest at time of writing).
                     </p>
                     <p> After correct installation python -V should show the following output:
