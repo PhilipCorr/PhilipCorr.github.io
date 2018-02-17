@@ -244,7 +244,7 @@ const home = () =>
 								Unit tests were written to test the application. 
 								Jasmine was used as the test framework, Karma as a test runner and Grunt was used to automate testing. 
 								Github was used to collaboratively develop the app with two other team members. Merge conflicts were also handled through git.
-								</p>
+							</p>
 
 							<p>All of my projects are tested across a number of devices and browsers to ensure that the design is reponsive across platforms. 
 								Chrome's developer tools allow multiple devices to be tested effectively.</p>
@@ -342,7 +342,7 @@ const home = () =>
 									This work involved developing a product comparison feature for Hybris and creating a QA framework for testing Hybris. 
 									The QA framework ran end to end tests using the Silenium testing framework. 
 									While there, I also implemented REST and SOAP based web services to automate credit report transfers.
-									</p>
+								</p>
 							</div>
 						</div>
 					</div>
