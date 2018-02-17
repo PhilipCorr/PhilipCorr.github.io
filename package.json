@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/PhilipCorr/PhilipCorr.github.io/issues"
   },
-  "homepage": "https://github.com/PhilipCorr/PhilipCorr.github.io#readme",
+  "homepage": "https://github.com/PhilipCorr/PhilipCorr.github.io/dist",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-cli": "^6.18.0",
@@ -33,7 +33,6 @@
     "node-sass": "^4.1.1",
     "prismjs": "^1.8.3",
     "react-prism": "^4.3.1",
-    "redux": "^3.7.1",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1",
     "webpack": "^1.13.3",

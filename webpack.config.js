@@ -3,9 +3,11 @@ var webpack = require('webpack');
 module.exports = {
 	entry: './src/index.js',
 	output: {
-		path: 'dist/assets',
+		// path: 'dist/assets',
+		path: __dirname,
 		filename: 'bundle.min.js',
-		publicPath: '/assets/'
+		//publicPath: '/assets/'
+		publicPath: __dirname
 	},
 	devServer: {
 		inline: true,
