@@ -69,7 +69,7 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 70px 0 100px 0;
+  padding: 90px 0 100px 0;
 }
 aside {
   padding: 50px 0;
@@ -163,25 +163,7 @@ aside {
     color: #F05F40;
   }
 }
-header {
-  position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: 49.2%;
-  background-image: url('../img/header.jpg');
-  text-align: center;
-  color: white;
-}
-header .header-content {
-  position: relative;
-  text-align: center;
-  padding: 100px 15px 100px;
-  width: 100%;
-}
+
 header .header-content .header-content-inner h1 {
   font-weight: 700;
   margin-top: 0;
@@ -197,13 +179,12 @@ header .header-content .header-content-inner p {
   font-size: 16px;
   margin-bottom: 50px;
 }
+/* if screensize less than 768 pixels */
 @media (min-width: 768px) {
-  header {
-    min-height: 730px;
-  }
+
   header .header-content {
     position: absolute;
-    top: 46%;
+    top: 80%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -224,6 +205,14 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
 }
+
+/* if screensize less than 1100 pixels */
+/* @media (min-width: 1100px) {
+  header {
+    min-height: 900px;
+  }
+} */
+
 .section-heading {
   margin-top: 0;
   margin-bottom: 20px;
@@ -470,15 +459,6 @@ body {
   left: 0;
 }
 
-#headshot {
-  width: 150px;
-  padding: .5em;
-  margin-top: 65px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, .4);
-  box-shadow: .5em .5em .5em rgba(0, 0, 0, .4);
-}
-
 #full-page {
   width: 100%;
   padding-right: 20px;
@@ -574,16 +554,6 @@ header .name-border{
   color: #FFF;
 }
 
-@media (min-width: 1600px){
-  #headshot {
-    width: 230px; 
-  }
-
-  header .name-border{
-    transform: translate(-50%, -70%);
-  }
-}
-
 @media (max-width: 1200px){
   .project-description-middle {
     margin-left: 10%;
@@ -596,17 +566,9 @@ header .name-border{
   }
 }
 
-@media (max-width: 768px){
-  #headshot {
-    width: 125px;
-    margin-top:20px;
-  }
-}
-
+/* if screensize less than 500 pixels */
 @media (max-width: 500px){
-  .name-border {
-    width: 60%;
-  }
+
   .project-description-middle {
     margin-left: 5%;
   }
@@ -615,9 +577,3 @@ header .name-border{
   }
 }
 
-@media (max-width: 300px){
-  .name-border {
-    width: 80%;
-  }
-
-}
