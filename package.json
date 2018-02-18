@@ -16,7 +16,7 @@
   "bugs": {
     "url": "https://github.com/PhilipCorr/PhilipCorr.github.io/issues"
   },
-  "homepage": "https://github.com/PhilipCorr/PhilipCorr.github.io/dist",
+  "homepage": "https://github.com/PhilipCorr/PhilipCorr.github.io",
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-cli": "^6.18.0",
